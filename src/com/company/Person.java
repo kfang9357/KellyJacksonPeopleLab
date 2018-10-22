@@ -25,9 +25,7 @@ public class Person {
         return familyName;
     }
     public boolean equals(Person p)
-    {
-        
-    }
+
 
 
 }
