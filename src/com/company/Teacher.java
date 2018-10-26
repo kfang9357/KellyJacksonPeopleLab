@@ -5,10 +5,10 @@ public class Teacher
     //fields
     private String subject;
     private String title;
-    private String familyName;
     //constructors
-    public Teacher(String subject, String title, String familyName)
+    public Teacher(String subject, String title)
     {
+        super(getFamilyName(), getFirstName());
         this.subject = subject;
         this.title = title;
         this.familyName = familyName;
@@ -36,5 +36,10 @@ public class Teacher
 
     public void setTitle(String title) {
         this.title = title;
+    }
+    //Methods
+    public String toString()
+    {
+        return(getTitle() + getFamilyName());
     }
 }
