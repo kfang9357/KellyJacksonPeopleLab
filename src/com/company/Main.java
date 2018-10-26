@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[]args){
         Student [] students = new Student[34];
-        for (int i =0; i<34,i++)
+        for (int i =0; i<34;i++)
         {
             students[i] = randomStudent();
         }

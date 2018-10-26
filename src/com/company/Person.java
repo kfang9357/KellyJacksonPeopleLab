@@ -9,23 +9,36 @@ public class Person {
     ///constructors///
     public Person(String firstName, String familyName)
     {
-        super("Person");
         this.firstName = firstName;
         this.familyName = familyName;
     }
 
     ///method///
-
+    public abstract String toString();
     public String getFirstName()
     {
         return firstName;
+    }
+    public void setFirstName(String firstName)
+    {
+        this.firstName = firstName;
     }
     public String getfamilyName()
     {
         return familyName;
     }
-    public boolean equals(Person p)
-
+    public void setFamilyName(String familyName)
+    {
+        this.familyName = familyName;
+    }
+    public boolean equals(Person person)
+    {
+        if(this.firstName.equals(person.getFirstName())&& this.familyName.equals(person.getFamilyName()))
+        {
+            return true;
+        }
+        else return false;
+    }
 
 
 }
