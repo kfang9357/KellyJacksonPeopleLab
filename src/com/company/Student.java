@@ -8,9 +8,9 @@ public class Student extends Person {
     private int classes;
 
     ///constructors///
-    public Student (double gpa, String year, int classes)
+    public Student(double gpa, String year, int classes)
     {
-        //super
+        //super("Students");
         this.gpa = gpa;
         this.year= year;
         this.classes = classes;
